@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/project_eunghwa/css/styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .heading-2 {
+        font-family: "SUIT", sans-serif;
+        margin-left: 100px;
+      }
+      .search-menu {
+        font-family: "SUIT", sans-serif;
+      }
+      body {
+        font-family: "SUIT", sans-serif;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin-top: 10px;
+        /* padding: 20px 0; */
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+      }
+      .content img {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+      }
+
+      .large-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+
+      .large-image-container img {
+        width: 100%; /* */
+        height: auto;
+        max-width: 1040px;
+        object-fit: cover;
+      }
+
+      .intro-heading {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .intro-subheading {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .intro-description {
+        color: gray;
+      }
+      .text-content {
+        margin-left: 100px;
+        max-width: 400px;
+      }
+      #records {
+        margin-right: 10px;
+      }
+      #login-block {
+        margin-left: 5px;
+      }
+      .left-panel {
+    width: 20%;
+    /* Add styles for the left panel if needed */
+}
+
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px dotted #fa8072;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.time-display {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.finish-time {
+    position: absolute;
+    bottom: -30px;
+    font-size: 14px;
+    color: #888;
+}
+
+.session {
+    position: absolute;
+    bottom: -50px;
+    font-size: 14px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.time-button {
+    background-color: #fa8072;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.time-button:hover {
+    background-color: #e96b5a;
+}
+    </style>
+  </head>
+
+  <body>
+    <div class="top_navi_bar">
+      <ul>
+        <!-- <li><a class="active" href="course.html">Course</a></li> -->
+        <li><a href="course.html" style="width: 100px">Course</a></li>
+        <li><a href="tools.html" style="width: 100px">Tools</a></li>
+        <li>
+          <a href="records.html" style="width: 80px" id="records">Records</a>
+        </li>
+      </ul>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="podomoro.jpg" alt="podomoro" />
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="login.html" style="width: 100px" id="login-block">Login</a>
+        </li>
+        <li><a href="signup.html" style="width: 100px">Sign Up</a></li>
+      </ul>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            class="search-menu"
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="content">
+            <img src="apple.jpg" alt="Apple" >
+            <div class="heading-2">
+                For every student,
+                <br>
+                every classroom. 
+                <br>
+                for real results.
+                
+            </div>
+            
+        </div>
+    </div> -->
+
+    <div class="large-image-container">
+      <img src="main-page.jpg" alt="Large Image" />
+    </div>
+
+    <div class="container">
+      <div class="content">
+        <img src="apple.jpg" alt="Apple" />
+        <div class="text-content">
+          <div class="intro-heading">Intro</div>
+          <div class="intro-subheading">
+            For every student, <br />
+            every classroom. <br />
+            Real results.
+          </div>
+          <div class="intro-description">
+            We're a nonprofit with the mission to provide a free, world-class
+            education for anyone, anywhere.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

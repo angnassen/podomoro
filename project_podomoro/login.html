@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/project_eunghwa/css/styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: ; */
+        }
+        
+
+        #header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        .container-loggin img {
+            cursor: pointer;
+            width: 124px;
+            height: 78px;
+            object-fit: contain;
+        }
+        .body-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            background: #ffffff;
+        }
+        .wrapper {
+            width: 420px;
+            /* border-radius: 10px; */
+            background: rgb(255, 255, 255);
+            color: black;
+            padding: 30px 40px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .wrapper .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 1px solid #E55039;            border-radius: 40px;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+            padding: 20px 45px 20px 20px;
+            border-radius: 12px;
+
+        }
+        .input-box input::placeholder {
+            color: #a4a4a4
+        }
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #E55039;
+        }
+
+        .wrapper .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+
+        }
+
+        .remember-forgot label input {
+            accent-color: white;
+            margin-right: 3px;
+        }
+        .remember-forgot a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+        .wrapper .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .wrapper .btn {
+            width: 80%;
+            height: 45px;
+            background: rgb(255, 255, 255);
+            border: 10px;
+            outline: none;
+            border-radius: 45px;
+            background-color: #E55039;
+            color: #ffffff;
+            /* box-shadow: 0 0 10px #E55039; */
+        }
+        .wrapper .register-link {
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .register-link p a {
+            color: rgb(108, 108, 108);
+            text-decoration: none;
+            font-weight: 600;
+
+        }
+        .register-link p a:hover {
+            text-decoration: underline;
+        }
+        
+
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container-loggin">
+            <a href="index.html">
+                <img src="podomoro.jpg" alt="podomoro">
+            </a>
+        </div>
+    </div>
+
+    <div class="body-login">
+        <div class="wrapper">
+            <form action="">
+                <h1>Sign In</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required> 
+                    <i class="bx bxs-user"></i>
+                </div>
+        
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required> 
+                    <i class="bx bxs-lock-alt"></i>
+                </div>
+        
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="" id=""> Keep me logged in</label>
+                    <!-- <a href="#">Forgot passwords?</a> -->
+                </div>
+        
+                <div class="btn-container">
+                    <button type="submit" class="btn" href="index.html">Login</button>
+                </div>
+        
+                <div class="register-link">
+                    <p>or go and <a href="#">Sign up</a></p>
+                </div>
+        
+        
+            </form>
+        </div>
+    </div class="body-login">
+
+
+</body>
+</html>

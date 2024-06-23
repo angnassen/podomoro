@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/project_eunghwa/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .heading-2 {
+        font-family: "SUIT", sans-serif;
+        margin-left: 100px;
+      }
+      .search-menu {
+        font-family: "SUIT", sans-serif;
+      }
+      body {
+        font-family: "SUIT", sans-serif;
+
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 10px;
+        /* padding: 20px 0; */
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+      }
+      .content img {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+      }
+
+      .large-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+
+      .large-image-container img {
+        width: 100%; /* */
+        height: auto;
+        max-width: 1040px;
+        object-fit: cover;
+      }
+
+      .intro-heading {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .intro-subheading {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .intro-description {
+        font-size: 14px;
+        color: gray;
+      }
+      .text-content {
+        margin-left: 100px;
+        max-width: 400px;
+      }
+      #records {
+        margin-right: 10px;
+      }
+      #login-block {
+        margin-left: 5px;
+      }
+      .as-page-title {
+        margin-left: auto;
+        margin-right: auto;
+        width: 980px;
+        margin-top: 68px;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .review-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px 0;
+        width: 100%;
+      }
+
+      .review {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        padding: 20px;
+        width: calc(33.333% - 40px);
+        text-align: center;
+      }
+
+      .review img {
+        border-radius: 50%;
+        height: 100px;
+        margin-bottom: 20px;
+        width: 100px;
+      }
+
+      .review-text {
+        font-size: 14px;
+      }
+
+      .review-text p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="top_navi_bar">
+      <ul>
+        <li><a class="active" href="index.html">Course</a></li>
+        <li><a href="tools.html" style="width: 100px">Tools</a></li>
+        <li>
+          <a href="records.html" style="width: 80px" id="records">Records</a>
+        </li>
+      </ul>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="podomoro.jpg" alt="podomoro" />
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="login.html" style="width: 100px" id="login-block">Login</a>
+        </li>
+        <li><a href="signup.html" style="width: 100px">Sign Up</a></li>
+      </ul>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            class="search-menu"
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="large-image-container">
+      <img src="record_image.jpg" alt="Large Image" />
+    </div>
+    <div class="as-page-title">
+      <div class="row justify-content-center">
+        <div class="column large-11 medium-11 small-12">
+          <h1 class="as-page-title__heading typography-headline-elevated">
+            Records - Achiever's Review
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-container">
+      <div class="review">
+        <img src="review-people1.jpg" alt="Reviewer 1" />
+        <div class="review-text">
+          <p>
+            "It was a good experience for me to learn a lot of things through
+            Podomoro. For example, I can now arrange my schedule perfectly."
+          </p>
+        </div>
+      </div>
+      <div class="review">
+        <img src="review-people2.jpg" alt="Reviewer 2" />
+        <div class="review-text">
+          <p>
+            "It was a good experience for me to learn a lot of things through
+            Podomoro. For example, I can now arrange my schedule perfectly."
+          </p>
+        </div>
+      </div>
+      <div class="review">
+        <img src="review-people2.jpg" alt="Reviewer 3" />
+        <div class="review-text">
+          <p>
+            "It was a good experience for me to learn a lot of things through
+            Podomoro. For example, I can now arrange my schedule perfectly."
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

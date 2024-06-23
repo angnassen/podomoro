@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/project_eunghwa/css/styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Course</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .heading-2 {
+        font-family: "SUIT", sans-serif;
+        margin-left: 100px;
+      }
+      .search-menu {
+        font-family: "SUIT", sans-serif;
+      }
+      body {
+        font-family: "SUIT", sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 10px;
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+      }
+      .content img {
+        width: 150px;
+        height: auto;
+        margin-right: 20px;
+      }
+      .large-image-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0;
+      }
+      .large-image-container img {
+        width: 100%;
+        height: auto;
+        max-width: 1040px;
+        object-fit: cover;
+      }
+      .intro-heading {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .intro-subheading {
+        font-size: 18px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .intro-description {
+        font-size: 14px;
+        color: gray;
+      }
+      .text-content {
+        margin-left: 100px;
+        max-width: 400px;
+      }
+      #records {
+        margin-right: 10px;
+      }
+      #login-block {
+        margin-left: 5px;
+      }
+      .main-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+      }
+      .course-content {
+        width: 70%;
+      }
+      .course-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .course-title h2 {
+        margin: 0;
+      }
+      .progress-bar {
+        width: 50%;
+        height: 10px;
+        background-color: #e0e0e0;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .progress-bar div {
+        width: 70%;
+        height: 100%;
+        background-color: #0070c9;
+      }
+      .video-container {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .video-container iframe {
+        width: 100%;
+        height: 400px;
+        border: none;
+      }
+      .about-unit {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .about-unit i {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+      .about-unit p {
+        margin: 0;
+        color: gray;
+      }
+      .course-list {
+        width: 25%;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .course-list h3 {
+        margin-top: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .course-list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .course-list ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+      }
+      .course-list ul li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top_navi_bar">
+      <ul>
+        <li><a href="course.html" style="width: 100px">Course</a></li>
+        <li><a href="tools.html" style="width: 100px">Tools</a></li>
+        <li>
+          <a href="records.html" style="width: 80px" id="records">Records</a>
+        </li>
+      </ul>
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="podomoro.jpg" alt="podomoro" />
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="login.html" style="width: 100px" id="login-block">Login</a>
+        </li>
+        <li><a href="signup.html" style="width: 100px">Sign Up</a></li>
+      </ul>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input
+            type="text"
+            placeholder="Search.."
+            name="search"
+            class="search-menu"
+          />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="course-content">
+        <div class="course-title">
+          <h2>Unit 1: Navigate your career</h2>
+          <div class="container">
+            <div class="progress progress-infinite">
+              <div class="progress-bar3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BCSMaKWzz8Q?si=AyNr5jEBSpkzr2R7"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="about-unit">
+          <i class="bx bx-info-circle"></i>
+          <p>About this unit</p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="course-list">
+        <h3>Intro to the course</h3>
+        <ul>
+          <li>UNIT-1 Work in tech</li>
+          <li>UNIT-2 Work in tech</li>
+          <li>UNIT-3 Work in tech</li>
+          <li>UNIT-4 Work in tech</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
